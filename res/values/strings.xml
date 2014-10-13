@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">Android Synthesis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Android Synth</string>
+    <string name="pureSine">Sine</string>
+    <string name="triangleWave">Triangular</string>
+    <string name="fmSweep">FM-Sweep</string>
+    <string name="trigger">Trigger</string>
+    <string name="cKey">C</string>
+    <string name="dKey">D</string>
+    <string name="eKey">E</string>
+    <string name="fKey">F</string>
+    <string name="gKey">G</string>
+    <string name="waWa">WaWa Pulse</string>
+    <string name="harmonics">Harmonics</string>
+    <string name="octaveUp">Octave Up</string>
+    <color name="lableColour">#CD8500</color>
+    <string name="release">Rel</string>
+    <string name="vol">Master</string>
+    <string name="aKey">A</string>
+    <string name="bKey">B</string>
+    <string name="decayPulse">Decay Pulse</string>
+    <string name="mixedSines">Mixed Sine</string>
+    <string name="stereo">Stereo</string>
+    <color name="buttonColour">#00B2EE</color>
+    <string name="filter">L.P.F.</string>
+
+</resources>

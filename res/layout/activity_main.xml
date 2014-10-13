@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/pureSine" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waWa" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fmSweep" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decayPulse" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mixedSines" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/FontStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton1"
+        android:layout_alignBottom="@+id/toggleButton1"
+        android:layout_toLeftOf="@+id/toggleButton1"
+        android:text="@string/harmonics"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lableColour" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/FontStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton2"
+        android:layout_alignBottom="@+id/toggleButton2"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/octaveUp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/lableColour" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/FontStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar2"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/vol"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/buttonColour" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar2"
+        android:layout_alignRight="@+id/toggleButton1"
+        android:progressDrawable="@color/lableColour" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/FontStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/release"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/MajorKey"
+            android:text="@string/cKey" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/MajorKey"
+            android:text="@string/dKey" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/MajorKey"
+            android:text="@string/eKey" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/MajorKey"
+            android:text="@string/fKey" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/MajorKey"
+            android:text="@string/gKey" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/MajorKey" 
+            android:text="@string/aKey" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/MajorKey"
+            android:text="@string/bKey" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        style="@style/MajorKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleButton1"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:text="ToggleButton"
+        tools:ignore="HardcodedText" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        style="@style/MajorKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toggleButton2"
+        android:layout_marginRight="14dp"
+        android:text="@string/harmonics" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        style="@style/MajorKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/toggleButton1"
+        android:layout_below="@+id/toggleButton1"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/FontStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton3"
+        android:layout_alignBottom="@+id/toggleButton3"
+        android:layout_alignRight="@+id/textView2"
+        android:text="@string/stereo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/buttonColour" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_marginBottom="22dp"
+        android:progressDrawable="@color/buttonColour" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignLeft="@+id/seekBar1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/FontStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar3"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/filter"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/soundLabel"
+        style="@style/FontStyles"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="TRUE"
+        android:singleLine="true"
+        android:text="" />
+
+</RelativeLayout>
